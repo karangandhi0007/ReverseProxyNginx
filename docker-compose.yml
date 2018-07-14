@@ -19,7 +19,7 @@ services:
             - reverseproxy
         image: httpd:alpine
         environment:
-            - "VIRTUAL_HOST=blog.domain.com"
+            - "VIRTUAL_HOST=blog.ip172-18-0-29-bd4oc29io8dg00abf470.direct.labs.play-with-docker.com"
      
   
 
