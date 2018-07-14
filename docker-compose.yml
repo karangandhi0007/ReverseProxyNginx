@@ -18,5 +18,10 @@ services:
         depends_on:
             - reverseproxy
         image: httpd:alpine
-        restart: always
+        expose:
+            - 80
+        environment:
+            - "VIRTUAL_HOST=blog.domain.com"
+     
+  
 
